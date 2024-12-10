@@ -15,8 +15,8 @@ const Support = () => {
                     <FontAwesomeIcon icon={faEnvelope} className="text-xl text-blue-700" />
                     <p className="font-bold text-xl mb-3">Email Us</p>
                     <div>
-                        <p>info@ivote.com</p>
-                        <p>support@ivote.com</p>
+                        <p>info@homz.com</p>
+                        <p>support@homz.com</p>
                     </div>
                 </div>
                 <div className="call my-5">
