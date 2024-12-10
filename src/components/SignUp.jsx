@@ -5,7 +5,7 @@ const SignUp = ({title, usertype, error, onSubmit, setFullname, setEmail, setPho
     return ( 
         <div className="form px-4">
            
-            <form onSubmit={onSubmit} className="auth py-10 bg-slate-50/95 shadow-lg rounded-md">
+            <form onSubmit={onSubmit} className="auth p-6 md:w-4/12 mx-auto shadow-lg rounded-md">
                 <h2 className="text-2xl md:text-3xl text-center mb-2 text-black p-2 w-9/12 rounded-md mx-auto font-sans font-bold text-blue-700">{title}</h2>
                 {error && (
                         <p className="text-center text-red-600">{error}</p>

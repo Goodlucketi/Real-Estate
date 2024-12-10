@@ -5,7 +5,7 @@ const Login = ({title,usertype, error, onSubmit, setEmail, setPwd, email, pwd })
     return ( 
         <div className="form px-4">
            
-            <form onSubmit={onSubmit} className="auth py-10 bg-slate-50/95 shadow-lg rounded-md">
+            <form onSubmit={onSubmit} className="auth md:w-4/12 mt-10 py-10 mx-auto p-6 shadow-lg rounded-md">
                 <h2 className="text-2xl md:text-3xl text-center mb-2 text-black p-2 w-9/12 rounded-md mx-auto font-sans font-bold text-blue-700">{title}</h2>
                 {error && (
                         <p className="text-center text-red-600">{error}</p>
