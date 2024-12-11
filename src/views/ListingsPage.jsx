@@ -6,7 +6,7 @@ import PropertyFilter from "../components/PropertyFilter"
 const ListingsPage = () => {
     return ( 
         <main>
-            <nav className="p-4 bg-blue-700 text-white sticky top-0 left-0 z-10">
+            <nav className="py-3 px-8 bg-blue-700 text-white sticky top-0 left-0 z-10">
                 <Link to="/"><h2 className="font-bold text-2xl">HOMZ</h2></Link>
             </nav>
             <PropertyFilter />

@@ -31,9 +31,9 @@ const Listing = ({listingCost, listingOption, listingType, listingLocation, list
             </div>
             {modalOpen && (
                 <div className="listingDetailsModal h-screen bg-slate-100/90 p-4 py-16 mx-auto fixed overflow-scroll top-0 left-0 w-full z-10">
-                    <FontAwesomeIcon onClick={closeModal} icon={faX} className="text-2xl bg-blue-700 p-2 absolute top-30 right-10 text-white" />
+                    <FontAwesomeIcon onClick={closeModal} icon={faX} className="text-lg bg-blue-700 p-1 absolute top-30 right-10 text-white" />
                     <div className="modal md:w-10/12 mx-auto ">
-                        <h3 className="text-2xl px-4 mb-3 text-blue-700 font-bold">Property Details</h3>
+                        <h3 className="text-3xl px-4 mb-3 text-blue-700 font-bold">Property Details</h3>
                         <div className="details md:flex gap-10 px-4">
                             <div className="image grid md:grid-cols-2 gap-5 mb-5">
                                 <img src={kitchen} alt="kitchen Picture" className="block w-full h-60 object-cover" />
@@ -44,11 +44,13 @@ const Listing = ({listingCost, listingOption, listingType, listingLocation, list
                             <div className="details px-4">
                                 <p className="mb-3 text-xl"><span className="font-bold">Price:</span> N350,000</p>
                                 <p className="mb-3 text-xl"><span className="font-bold">Agent Name:</span> Prince Akpan</p>
+                                <p className="mb-3 text-xl"><span className="font-bold">Status:</span>Available</p>
                                 <p className="mb-3 text-xl"><span className="font-bold">Type:</span> 3 Bedroom Flat</p>
                                 <p className="mb-3 text-xl"><span className="font-bold">Address:</span> 20 Nsit Ikpa Street, Uyo, Akwa Ibom State, Nigeria</p>
                                 <p className="mb-3 text-xl"><span className="font-bold">Amenities:</span> 2 Toilets, Bathroom, Kitchen, 2 Bedrooms</p>
                                 <p className="mb-3 text-xl"><span className="font-bold">Agent Contact:</span> 08012345783</p>
-                                <button className="p-3 mx-auto bg-blue-700 rounded-md text-white my-3">Contact Agent</button>
+                                <button className="py-3 px-8 hover:bg-blue-500 duration-1000 transition-all mx-5 bg-blue-700 rounded-md text-white my-3">Contact Agent</button>
+                                <button className="py-3 px-8 hover:bg-blue-500 duration-1000 transition-all mx-5 bg-blue-700 rounded-md text-white my-3">Save</button>
                             </div>
                            
                         </div>
