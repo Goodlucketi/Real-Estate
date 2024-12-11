@@ -7,6 +7,7 @@ import ClientSignup from './views/ClientSignup';
 import ClientLogin from './views/ClientLogin';
 import AgentLogin from './views/AgentLogin';
 import ListingsPage from './views/ListingsPage';
+import PropertyUploadForm from './views/PropertyUploadForm';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/agent_login' element={<AgentLogin />} />
         <Route path='/support' element={<Support />} />
         <Route path='/listings' element={<ListingsPage />} />
+        <Route path='/upload' element={<PropertyUploadForm />} />
       </Routes>
     </Router>
   )
