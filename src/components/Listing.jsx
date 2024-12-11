@@ -42,6 +42,7 @@ const Listing = ({listingCost, listingOption, listingType, listingLocation, list
                                 <img src={interior} alt="Front view of a house" className="block w-full h-60 object-cover" />
                             </div>
                             <div className="details px-4">
+                                <p className="mb-3 text-xl"><span className="font-bold">Price:</span> N350,000</p>
                                 <p className="mb-3 text-xl"><span className="font-bold">Agent Name:</span> Prince Akpan</p>
                                 <p className="mb-3 text-xl"><span className="font-bold">Type:</span> 3 Bedroom Flat</p>
                                 <p className="mb-3 text-xl"><span className="font-bold">Address:</span> 20 Nsit Ikpa Street, Uyo, Akwa Ibom State, Nigeria</p>
