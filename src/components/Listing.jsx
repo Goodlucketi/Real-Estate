@@ -8,8 +8,7 @@ import interior from "../assets/images/interior.jpg"
 const Listing = ({listingCost, listingOption, listingType, listingLocation, listingImg}) => {
     const [modalOpen, setModalOpen] = useState(false)
     const listingDetailsModal = ()=>{
-        setModalOpen(true)
-        console.log('details');     
+        setModalOpen(true)   
     }
 
     const closeModal = ()=>{
@@ -19,14 +18,14 @@ const Listing = ({listingCost, listingOption, listingType, listingLocation, list
         <main className="p-4">
             <div className="listing relative shadow-md rounded-md">
                 <img src={listingImg} alt="Listing image" className="h-52 w-full object-cover rounded-t-md" />
-                <div className="px-4">
-                    <p className="font-bold text-lg bg-blue-700 inline-block text-white p-2 rounded-md my-2">{listingCost}</p>
-                    <h3 className="font-bold text-xl">{listingType}</h3>
-                    <p>{listingLocation}</p>
-                    <p>{listingOption}</p>
+                <div className="px-4 grid grid-cols-2 gap-x-5 items-center">
+                    <p className="font-bold text-lg bg-blue-700 text-center text-white p-2 rounded-md my-2">{listingCost}</p>
+                    <h3 className="font-bold text-lg">{listingType}</h3>
+                    <p><span className="font-bold text-xl">Location:</span> {listingLocation}</p>
+                    <p className="font-bold text-xl">{listingOption}</p>
                 </div>
-                <div className="action px-4 py-4">
-                    <button onClick={listingDetailsModal} className="view px-8 text-lg rounded-md py-3 bg-blue-700 text-white">View</button>
+                <div className="action px-4 py-3">
+                    <button onClick={listingDetailsModal} className="view block w-full px-8 text-lg rounded-md py-2 bg-blue-700 text-white">View</button>
                 </div>
             </div>
             {modalOpen && (

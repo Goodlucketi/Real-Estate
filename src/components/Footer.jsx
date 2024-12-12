@@ -19,8 +19,8 @@ const Footer = () => {
                     <li className="my-2 list-none"><RouterLink to="/">Home</RouterLink></li>
                     <li className="my-2 list-none cursor-pointer"><ScrollLink to="about" smooth={true} duration={500}>About</ScrollLink></li>
                     <li className="my-2 list-none cursor-pointer"><ScrollLink to="features" smooth={true} duration={500}>Features</ScrollLink></li>
-                    <li className="my-2 list-none cursor-pointer"><ScrollLink to="howitworks" smooth={true} duration={500}>How it Works</ScrollLink></li>
-                    <li className="my-2 list-none cursor-pointer"><ScrollLink to="faqs" smooth={true} duration={500}>FAQs</ScrollLink></li>
+                    <li className="my-2 list-none cursor-pointer"><ScrollLink to="testimonials" smooth={true} duration={500}>Testimonials</ScrollLink></li>
+                    <li className="my-2 list-none cursor-pointer"><ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink></li>
                 </div>
                 <div className="social mb-5">
                     <h3 className="font-bold mb-3 underline">Contact Us</h3>
